@@ -22,7 +22,7 @@ const Stats = () => {
         },
     ]
     return (
-        <section>
+        <section className="pt-4 pb-12 xl:pb-0 xl:pt-0">
             <div className="container mx-auto">
                 <div className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none">
                     {stats.map((item, index)=>
@@ -33,7 +33,7 @@ const Stats = () => {
                         delay={2}
                         className="text-4xl xl:text-6xl font-bold "
                         />
-                        <p className={`${item.title.length<15?"max-w-[100px]":"max-w-[150px]"}`}>{item.title}</p>
+                        <p className={`${item.title.length<15?"max-w-[100px]":"max-w-[150px]"} leading-snug text-white/80`}>{item.title}</p>
                      </div>
                     )}
                 </div>
