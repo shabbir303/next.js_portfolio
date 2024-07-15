@@ -75,7 +75,7 @@ const Contact = () => {
         })
     }
     return (
-      <div className="container mx-auto xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 items-center justify-around overflow-hidden xl:mb-6">
+      <div className="container mx-auto xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 items-center justify-around overflow-hidden mb-4 xl:mb-6">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
           className="flex-[0.75] bg-[#121222] p-10 rounded-2xl"
@@ -137,7 +137,7 @@ const Contact = () => {
           variants={slideIn("right", "tween", 0.2, 1)}
           className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
         >
-         <div className='flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0'>
+         <div className='flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-4 xl:mb-0'>
                         <ul className='flex flex-col gap-6'>
                             {info.map((info, index) => {
                                 return (

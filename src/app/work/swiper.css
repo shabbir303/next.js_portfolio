@@ -3,4 +3,23 @@
     height: 100%;
   }
 
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+  
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-button-next, .swiper-button-prev, .swiper-rtl .swiper-button-prev {
+    visibility: hidden; /* Hide the buttons */
+    opacity: 0; /* Ensure they are invisible */
+  }
+  
+  .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+    content: none; /* Remove the ::after content */
+  }
   
